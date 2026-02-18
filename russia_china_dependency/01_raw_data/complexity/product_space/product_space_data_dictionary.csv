@@ -1,0 +1,7 @@
+column_name,data_type,description,notes
+product_hs92_code,string,Product code using HS 1992,
+product_space_x,float,X coordinate in the Product Space,"X coordinate of UMAP embeddings of a proximity matrix, where distances between products are meaningful and represent their relatedness based on whether products are co-exported by countries."
+product_space_y,float,Y coodinate in the  Product Space,"Y coordinate of UMAP embeddings of a proximity matrix, where distances between products are meaningful and represent their relatedness based on whether products are co-exported by countries."
+product_space_cluster_name,string,Product Space cluster name,The Product Space groups products into named clusters based on global co-export patterns.
+product_hs92_code_source,string,HS92 product code of source node,Source value of edge describing top relatedness links between products for visualization purposes.
+product_hs92_code_target,string,HS92 product code of target node,Source value of edge describing top relatedness links between products for visualization purposes.

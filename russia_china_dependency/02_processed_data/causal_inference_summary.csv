@@ -1,0 +1,6 @@
+pair,label,n_years,mean_trade,max_trade
+RUS-BRA,Russie-Bresil (controle),31,4217061880.0,11215965217
+RUS-CHN,Russie-Chine (traitee),31,66029872774.0,233236268574
+RUS-DEU,Russie-Allemagne (ref. UE),31,40396151653.0,82836451252
+RUS-IND,Russie-Inde (controle),31,8972505778.0,58563780538
+RUS-TUR,Russie-Turquie (controle),31,18508804141.0,56421952062

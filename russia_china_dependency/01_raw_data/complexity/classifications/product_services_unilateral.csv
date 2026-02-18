@@ -1,0 +1,17 @@
+product_id,product_services_unilateral_code,product_level,product_name,product_name_short,product_parent_id,product_id_hierarchy,show_feasibility
+14,services,1,Services,Services,,14,False
+400,unspecified,2,Unspecified services,Unspecified,14,14.400,False
+401,travel,2,Travel & tourism services,Travel & tourism,14,14.401,False
+402,transport,2,Transport services,Transport,14,14.402,False
+403,ict,2,Business services,Business,14,14.403,False
+404,financial,2,Insurance & financial services,Insurance & finance,14,14.404,False
+4000,unspecified,4,Unspecified services,Unspecified,400,14.400.4000,False
+4001,travel,4,Travel & tourism services,Travel & tourism,401,14.401.4001,False
+4002,transport,4,Transport services,Transport,402,14.402.4002,False
+4003,ict,4,Business services,Business,403,14.403.4003,False
+4004,financial,4,Insurance & financial services,Insurance & finance,404,14.404.4004,False
+14000,unspecified,6,Unspecified services,Unspecified,4000,14.400.4000.14000,False
+14001,travel,6,Travel & tourism services,Travel & tourism,4001,14.401.4001.14001,False
+14002,transport,6,Transport services,Transport,4002,14.402.4002.14002,False
+14003,ict,6,Business services,ICT,4003,14.403.4003.14003,False
+14004,financial,6,Insurance & financial services,Insurance & finance,4004,14.404.4004.14004,False

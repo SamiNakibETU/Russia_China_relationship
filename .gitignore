@@ -1,0 +1,72 @@
+# === Donnees volumineuses (non versionnees) ===
+# BACI (2+ GB)
+BACI_HS17_V202501/
+BACI_HS17_V202501.zip
+
+# Atlas HS92 product-level (18+ GB)
+russia_china_dependency/01_raw_data/complexity/trade_hs92/hs92_country_country_product_year_*.csv
+russia_china_dependency/01_raw_data/complexity/trade_hs92/hs92_country_product_year_*.csv
+russia_china_dependency/01_raw_data/complexity/atlas_trade_hs92.zip
+
+# GDELT raw exports (3+ GB)
+russia_china_dependency/01_raw_data/gdelt_full/*.CSV
+russia_china_dependency/01_raw_data/gdelt_full/*.zip
+
+# Comtrade detaille (155 MB)
+russia_china_dependency/01_raw_data/trade/comtrade_detailed_2013_2024.csv
+
+# Diplomatic large files (136 MB chacun)
+russia_china_dependency/01_raw_data/diplomatic/AgreementScores*.csv
+
+# WITS HS6 (21 MB) et exports bruts
+russia_china_dependency/01_raw_data/trade/wits_russia_china_hs6_2007_2021.csv
+russia_china_dependency/01_raw_data/trade/DataJobID-*.csv
+russia_china_dependency/01_raw_data/trade/TradeData_*.csv
+
+# Energy Institute xlsx (14 MB)
+russia_china_dependency/01_raw_data/energy/*.xlsx
+
+# Archive
+_archive/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+
+# === Environments ===
+.env
+.venv
+venv/
+env/
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# === IDE ===
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Secrets ===
+*api*.txt
+*api*.key
+
+# === Temp scripts ===
+_build_*.py
+_run_*.py
+_check_*.py
+_test_*.py
+_rebuild_nb.py
+_final_test.py

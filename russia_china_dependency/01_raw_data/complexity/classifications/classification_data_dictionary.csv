@@ -1,0 +1,25 @@
+column_name,data_type,description,notes
+country_id,integer,Numerical country identification code assigned by the Growth Lab,Augmented version of UN M49 codes.
+country_iso3_code,string,Three letter country identification code,Augmented version of ISO 3166-1 alpha-3 codes.
+country_name,string,English name of country,
+country_name_short,string,Shortened English name of country (where applicable),This value may be the same as country name.
+group_id,integer,Numerical geographic group identification code assigned by the Growth Lab,
+group_type,string,Type of geographic group,
+group_name,string,English name of geographic group,
+group_parent_id,integer,Group parent ID,Provides the group ID of the immediate parent for the selected group one level of analysis higher when applicable.
+product_id,integer,Numerical product ID code assigned by the Growth Lab,Product IDs are valid only within their classification. The same product IDs are used in different classifications to refer to different products.
+product_sitc_code,string,Product code using SITC rev. 2,
+product_hs92_code,string,Product code using HS 1992,
+product_hs12_code,string,Product code using HS 2012,
+product_hs22_code,string,Product code using HS 2022,
+product_services_unilateral_code,string,Product code for unilateral services assigned by the Growth Lab,
+product_level,integer,Product level corresponding to number of digits in respective product code,
+product_name,string,English name of product,
+product_name_short,string,Shortened English name of product (where applicable),This value may be the same as product_name.
+product_parent_id,integer,Product parent ID,Provides the product ID of the immediate parent for the selected product one level of analysis higher. This is not provided for products at the highest level (1 digit).
+product_id_hierarchy,string,Product hierarchy for a given product,Formatted as a string containing product IDs separated by periods from highest level (1 digit) to the selected product's ID through the complete parental relationship chain.
+in_rankings,boolean,Country included in Growth Projections and ECI rankings,"Flags if a country meets trade volume, population, and data quality requirements to be included in current Growth Lab rankings analysis."
+former_country,boolean,Country no longer exists,Flags a country where data previously exists but country no longer shows as an active country.
+show_feasibility,boolean,Product shown in feasibility analysis,"Not all products are recommended in feasibility analysis for a variety of reasons (such as trade discrepencies, natural resource requirements, etc.)."
+natural_resource,boolean,Product considered a natural resource,Flags if a product is considered a resource that may occur naturally which is controlled for in various analyses.
+green_product,boolean,Product designated a Green Enabler,Represents if a product is considered a Green Enabler in the Atlas.

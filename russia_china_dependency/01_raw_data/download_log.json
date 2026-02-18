@@ -1,0 +1,219 @@
+[
+  {
+    "timestamp": "2026-02-13T00:46:50.189188",
+    "source": "atlas_complexity",
+    "status": "error",
+    "detail": "Classement ECI des pays — HTTP 404: 404 Client Error: Not Found for url: https://intl-atlas-downloads.s3.amazonaws.com/ranking_of_countries.csv",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:46:50.555842",
+    "source": "atlas_complexity",
+    "status": "error",
+    "detail": "Classement PCI des produits — HTTP 404: 404 Client Error: Not Found for url: https://intl-atlas-downloads.s3.amazonaws.com/ranking_of_products.csv",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:46:50.932577",
+    "source": "atlas_complexity",
+    "status": "error",
+    "detail": "Commerce bilatéral HS2 — HTTP 404: 404 Client Error: Not Found for url: https://intl-atlas-downloads.s3.amazonaws.com/country_hsproduct2digit.csv.zip",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:46:51.293064",
+    "source": "atlas_complexity",
+    "status": "error",
+    "detail": "Commerce bilatéral HS4 (fichier volumineux ~1 Go) — HTTP 404: 404 Client Error: Not Found for url: https://intl-atlas-downloads.s3.amazonaws.com/country_hsproduct4digit.csv.zip",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:46:52.188830",
+    "source": "atlas_complexity",
+    "status": "error",
+    "detail": "API Dataverse : 'charmap' codec can't encode character '\\u2192' in position 2: character maps to <undefined>",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:46:52.188859",
+    "source": "Atlas of Economic Complexity",
+    "status": "fatal",
+    "detail": "'charmap' codec can't encode character '\\u2192' in position 4: character maps to <undefined>",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:46:53.496884",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20140301 — extrait 1 fichier(s) : ['20140301.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:46:55.406315",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20140401 — extrait 1 fichier(s) : ['20140401.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:46:57.749264",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20140501 — extrait 1 fichier(s) : ['20140501.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:46:59.950376",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20140701 — extrait 1 fichier(s) : ['20140701.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:02.249328",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20140801 — extrait 1 fichier(s) : ['20140801.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:04.473230",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20220224 — extrait 1 fichier(s) : ['20220224.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:06.716237",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20220301 — extrait 1 fichier(s) : ['20220301.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:09.094734",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20220401 — extrait 1 fichier(s) : ['20220401.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:11.106962",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20220501 — extrait 1 fichier(s) : ['20220501.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:13.187333",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20220601 — extrait 1 fichier(s) : ['20220601.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:15.366111",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20220701 — extrait 1 fichier(s) : ['20220701.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:17.335244",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20240101 — extrait 1 fichier(s) : ['20240101.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:19.437043",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20240601 — extrait 1 fichier(s) : ['20240601.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:21.489024",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20241001 — extrait 1 fichier(s) : ['20241001.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:23.122921",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "GDELT 20250101 — extrait 1 fichier(s) : ['20250101.export.CSV']",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:40.814272",
+    "source": "gdelt",
+    "status": "success",
+    "detail": "Filtrage terminé : 2664 événements RUS-CHN → gdelt_russia_china_filtered.csv",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\gdelt_full\\gdelt_russia_china_filtered.csv"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:40.814300",
+    "source": "GDELT raw events",
+    "status": "fatal",
+    "detail": "'charmap' codec can't encode character '\\u2192' in position 50: character maps to <undefined>",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:47:42.848740",
+    "source": "unctad",
+    "status": "error",
+    "detail": "API metadata : 404 Client Error: Not Found for url: https://unctadstat.unctad.org/api/reportMetadata/US.FdiFlowsStock",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:47:43.030719",
+    "source": "unctad",
+    "status": "success",
+    "detail": "Bulk download (0.0 Mo) → unctad_fdi_bulk.html",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\unctad\\unctad_fdi_bulk.html"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:43.030765",
+    "source": "unctad",
+    "status": "error",
+    "detail": "Bulk download : 'charmap' codec can't encode character '\\u2192' in position 30: character maps to <undefined>",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:47:45.060538",
+    "source": "unctad",
+    "status": "success",
+    "detail": "Bulk download (0.4 Mo) → unctad_fdi_bulk.html",
+    "path": "d:\\Users\\Proprietaire\\Desktop\\Projet_perso\\Chine-russie\\russia_china_dependency\\01_raw_data\\unctad\\unctad_fdi_bulk.html"
+  },
+  {
+    "timestamp": "2026-02-13T00:47:45.060558",
+    "source": "unctad",
+    "status": "error",
+    "detail": "Bulk download : 'charmap' codec can't encode character '\\u2192' in position 30: character maps to <undefined>",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:47:45.060583",
+    "source": "unctad",
+    "status": "error",
+    "detail": "Aucune méthode n'a fonctionné. Téléchargement manuel requis.",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:47:45.060593",
+    "source": "UNCTAD FDI",
+    "status": "fatal",
+    "detail": "'charmap' codec can't encode character '\\u2192' in position 4: character maps to <undefined>",
+    "path": ""
+  },
+  {
+    "timestamp": "2026-02-13T00:47:47.542625",
+    "source": "imf_dots",
+    "status": "error",
+    "detail": "API IMF inaccessible : HTTPConnectionPool(host='dataservices.imf.org', port=80): Max retries exceeded with url: /REST/SDMX_JSON.svc/Dataflow (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023654FED040>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée'))",
+    "path": ""
+  }
+]
