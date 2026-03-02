@@ -16,6 +16,7 @@
       color: #111;
       font-size: 14px;
       line-height: 1.5;
+      overflow-x: hidden;
     }
 
     header {
@@ -43,15 +44,17 @@
     main.grid {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 40px;
+      padding: 0;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0;
     }
 
     .chart-block {
-      padding: 32px 24px 24px;
+      padding: 32px 32px 24px;
       border-bottom: 1px solid #e0e0e0;
+      min-width: 0;
+      overflow: hidden;
     }
 
     .chart-block:nth-child(odd) {
@@ -84,11 +87,23 @@
     }
 
     @media (max-width: 768px) {
-      header, main.grid, footer { padding: 24px 16px; }
-      main.grid { grid-template-columns: 1fr; gap: 0; }
-      .chart-block:nth-child(odd) { border-right: none; }
-      .chart-block { padding: 24px 0; }
-      h1 { font-size: 18px; }
+      header, footer { padding: 24px 16px; }
+      main.grid {
+        padding: 0;
+        grid-template-columns: 1fr;
+      }
+      .chart-block {
+        padding: 20px 12px 16px;
+        border-right: none !important;
+      }
+      h1 { font-size: 17px; }
+      .subtitle { font-size: 12px; }
+    }
+
+    @media (max-width: 480px) {
+      header, footer { padding: 16px 12px; }
+      h1 { font-size: 15px; }
+      .chart-block { padding: 16px 8px 12px; }
     }
   </style>
 </head>
@@ -146,6 +161,12 @@
     };
 
     var CFG = { responsive: true, displayModeBar: false };
+
+    if (window.innerWidth <= 768) {
+      LAYOUT_BASE.margin = { l: 40, r: 8, t: 12, b: 56 };
+      LAYOUT_BASE.height = 260;
+      LAYOUT_BASE.legend = { orientation: 'h', y: -0.35, x: 0, font: { size: 10 }, bgcolor: 'rgba(0,0,0,0)' };
+    }
 
     function layout(overrides) {
       overrides = overrides || {};
@@ -274,6 +295,26 @@
       zmax: 15, zmid: 1, zmin: 0,
       type: 'heatmap'
     }], Object.assign({}, LAYOUT_BASE, {height: 340}), CFG);
+  </script>
+  <script type="text/javascript">
+    (function() {
+      var CHART_IDS = [
+        'chart-mdi', 'chart-scenarios', 'chart-sankey',
+        'chart-breakcost', 'chart-priceindex', 'chart-asymmetry'
+      ];
+      function relayoutAll() {
+        CHART_IDS.forEach(function(id) {
+          var el = document.getElementById(id);
+          if (el && el._fullLayout) {
+            Plotly.relayout(id, { width: el.offsetWidth });
+          }
+        });
+      }
+      window.addEventListener('resize', relayoutAll);
+      window.addEventListener('load', function() {
+        setTimeout(relayoutAll, 100);
+      });
+    })();
   </script>
 </body>
 </html>
