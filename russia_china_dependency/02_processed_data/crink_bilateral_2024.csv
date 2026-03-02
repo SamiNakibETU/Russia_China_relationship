@@ -1,0 +1,8 @@
+exporter,importer,value_bn,category,source
+CHN,RUS,245.0,trade,comtrade_2024
+CHN,IRN,42.0,trade+oil,csis_2024
+CHN,PRK,1.0,trade,tass_2024
+RUS,IRN,5.0,arms,sipri_estimate
+RUS,PRK,1.0,munitions,us_estimate
+IRN,RUS,3.0,drones,oryx_2024
+PRK,RUS,2.5,munitions,pentagon_estimate

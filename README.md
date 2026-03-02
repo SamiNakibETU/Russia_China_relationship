@@ -1,89 +1,88 @@
 # Russia-China Economic Dependency Analysis
 
-Quantitative analysis of the Russia-China trade relationship through the lens of Western sanctions. Combines econometrics, causal inference, and network analysis to answer:
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Data](https://img.shields.io/badge/data-2017--2024-informational.svg)
+![Methods](https://img.shields.io/badge/methods-VAR%20|%20Event%20Study%20|%20Network-orange.svg)
+![License](https://img.shields.io/badge/license-Academic-yellow.svg)
 
-> **Have Western sanctions caused an irreversible structural dependency of Russia on China, and does this asymmetry constitute a strategic lever for Beijing?**
+**Core finding**: HHI=0.40 (extreme concentration). RUS 67.5% exports → CHN, asymmetry 7.2x. Event Study post-2022: +53.6% trade (p<0.001). Russia migrated from European to Asian trade bloc (2017→2023).
 
-## Notebooks
+> Have Western sanctions caused irreversible structural dependency of Russia on China?
 
-| # | Notebook | Methods | Key Finding |
-|---|----------|---------|-------------|
-| 01 | [Structural Analysis](notebooks/01_structural_analysis.ipynb) | HHI, ECR, Grubel-Lloyd, Gravity (PPML) | HHI = 0.40 (extreme concentration), HS27 = 59% of exports |
-| 02 | [Time Series Econometrics](notebooks/02_time_series_econometrics.ipynb) | VAR, Granger Causality, IRF, FEVD | Brent Granger-causes trade (p<0.001), explains 17% of trade variance |
-| 03 | [Causal Inference](notebooks/03_causal_inference.ipynb) | DiD, CausalImpact (BSTS), Event Study | Post-2022 sanctions increased RUS-CHN trade by +54% vs counterfactual |
-| 04 | [Network Analysis](notebooks/04_network_analysis.ipynb) | Centrality, Louvain communities, HITS | Russia migrated from European to Asian trade bloc (2017 vs 2023) |
+[View Analysis (HTML)](reports/01_structural_analysis.html) · [Dashboard](reports/dashboard.html) · [Executive Summary](reports/EXECUTIVE_SUMMARY.md) · [Notebooks](notebooks/)
 
-## Selected Results
+---
 
-### Trade reorientation
-- China's share in Russian trade: **5% (1995) → 39% (2023)**
-- Europe's share: **59% (1995) → 16% (2023)**
-- Russia's community membership (Louvain): **European bloc (2017) → Asian bloc (2023)**
+## Visual Evidence
 
-### Causal evidence
-- DiD: sanctions created significant excess trade growth vs control pairs (RUS-IND, RUS-TUR)
-- Event Study: +81% trade increase in months [+3, +6] after Feb 2022 (p<0.001)
-- Russian trade surplus tripled post-sanctions (0.68 → 2.02 Mrd USD/month)
+| Figure                        | Caption                                                      |
+| ----------------------------- | ------------------------------------------------------------ |
+| china_share_timeline          | China: 5.3% (1995) → 39.4% (2023). Europe: 59.4% → 15.6%.    |
+| hhi_timeline                  | HHI: 0.24 (2007) → 0.40 (2021). Threshold 0.25.              |
+| did_treatment_effect          | Event Study [+3,+6]: +81.5%. Mean post: +53.6%. R²=0.90.     |
+| network_communities_2017_2023 | RUS 2017: European bloc. RUS 2023: Asian bloc (incl. CHN).   |
+| mdi_timeline                  | MDI: 2.67%–7.98% (mean 3.89%). Carnegie ~300 M$/mo dual-use. |
+| crink_network_graph           | CHN→RUS 245 Bn. Total CRINK: 300 Bn.                         |
 
-### Econometric dynamics
-- Oil prices Granger-cause bilateral trade, but not the reverse
-- FEVD: Brent explains 17% of trade variance at 12-month horizon
-- Structural break confirmed for Brent, USD/RUB, and trade equations (Chow test, p<0.05)
+---
+
+## Analysis
+
+| Notebook | Method           | N            | Result               | Test                     |
+| -------- | ---------------- | ------------ | -------------------- | ------------------------ |
+| 01       | HHI, Gravity OLS | 15 yr        | HHI=0.404, R²=0.937  | Chow p=0.007             |
+| 02       | VAR(2), Granger  | 96 mo        | Brent→Trade p=0.0000 | FEVD h=12: 17.2%         |
+| 03       | Event Study      | 96 mo        | +53.6% post-2022     | [+3,+6]: +81.5%, p<0.001 |
+| 04       | Louvain          | 50 countries | RUS: Euro→Asian bloc | CHN share 39.4%          |
+| 05       | MDI              | 32 mo        | 2.67–7.98%           | Carnegie categories      |
+| 06       | Asymmetry        | 7 dyads      | CHN→RUS 245 Bn       | IRN-RUS 4.38             |
+
+---
 
 ## Data Sources
 
-| Source | Period | Description |
-|--------|--------|-------------|
-| [UN Comtrade](https://comtradeplus.un.org/) | 2017-2024 | Monthly bilateral trade (CHN/RUS reporter) |
-| [Harvard Atlas HS92](https://dataverse.harvard.edu/dataverse/atlas) | 1988-2024 | Bilateral trade, 200+ countries |
-| [FRED](https://fred.stlouisfed.org/) | 1992-2025 | Brent, USD/RUB, USD/CNY |
-| [BACI (CEPII)](http://www.cepii.fr/CEPII/en/bdd_modele/bdd_modele_item.asp?id=37) | 2017-2023 | Reconciled bilateral trade HS6 |
-| [WITS](https://wits.worldbank.org/) | 2007-2021 | Product-level HS6 exports |
-| [SIPRI](https://www.sipri.org/databases/armstransfers) | 1990-2024 | Arms transfers |
-| [GDELT](https://www.gdeltproject.org/) | 2013-2025 | Geopolitical events |
+| Source             | Period    | Description               |
+| ------------------ | --------- | ------------------------- |
+| UN Comtrade        | 2017-2024 | Monthly bilateral         |
+| Harvard Atlas HS92 | 1988-2024 | Bilateral, 200+ countries |
+| FRED               | 1992-2025 | Brent, USD/RUB, USD/CNY   |
+| BACI (CEPII)       | 2017-2023 | Reconciled HS6            |
+| WITS               | 2007-2021 | HS6 exports               |
+| SIPRI              | 1990-2024 | Arms                      |
+| Carnegie           | 2024      | Dual-use estimates        |
 
-Raw data is not included in the repo (multi-GB). Processed datasets are in `russia_china_dependency/02_processed_data/`.
+Processed: `russia_china_dependency/02_processed_data/`.
 
-## Project Structure
+---
 
-```
-├── notebooks/
-│   ├── 01_structural_analysis.ipynb
-│   ├── 02_time_series_econometrics.ipynb
-│   ├── 03_causal_inference.ipynb
-│   └── 04_network_analysis.ipynb
-├── reports/figures/              # Generated figures
-├── russia_china_dependency/
-│   ├── 01_raw_data/              # Raw data (gitignored, see above)
-│   │   ├── trade/
-│   │   ├── prices/
-│   │   ├── macro/
-│   │   ├── complexity/
-│   │   ├── gdelt_full/
-│   │   ├── diplomatic/
-│   │   ├── energy/
-│   │   └── arms/
-│   └── 02_processed_data/        # Cleaned datasets (included)
-├── config.py
-└── README.md
-```
+## Methodology
+
+- VAR(2) en dlog. Ordering: Brent → USD/RUB → USD/CNY → Exp RUS→CHN.
+- Event Study: phase dummies, ref baseline <−6 mo. OLS, Brent+USD/RUB controls.
+- Louvain: edge weight = trade value. Modularity by year.
+
+---
+
+## Limitations
+
+- N=96 monthly obs. VAR: 80% power at d≈0.5. Below N=150 for stable IRF (Lütkepohl 2005).
+- Post-2022 RUS data: mirror gap CHN-RUS up to −15% (2020).
+- DiD SUTVA: sanctions spill to control (IND, TUR).
+- Louvain: modularity varies with edge weights.
+
+---
 
 ## Setup
 
 ```bash
-pip install pandas numpy matplotlib seaborn statsmodels scipy scikit-learn networkx python-louvain causalimpact
+pip install -r requirements.txt
 ```
 
-Notebooks auto-detect paths whether run from `notebooks/` or project root.
-
-## Methodological Notes
-
-- N=96 monthly observations (2017-2024) is a small sample for VAR. Results are exploratory.
-- Post-2022 Russian trade data has reduced reliability (publication restrictions).
-- DiD SUTVA assumption is partially violated (sanctions affect control countries indirectly).
-- Atlas/BACI data is reconciled, so mirror statistics require raw Comtrade declarations.
-- Louvain community detection is sensitive to edge weighting choices.
+Notebooks run from project root or `notebooks/`.
 
 ## License
 
-Academic use. Data sources retain their original licenses.
+- Code: MIT
+- Reports/figures: CC BY 4.0
+- Data sources: original licenses (see `russia_china_dependency/01_raw_data/` if SOURCES.md present)
