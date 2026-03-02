@@ -10,7 +10,7 @@
 
 > Have Western sanctions caused irreversible structural dependency of Russia on China?
 
-[View Analysis (HTML)](reports/01_structural_analysis.html) · [Dashboard](reports/dashboard.html) · [Executive Summary](reports/EXECUTIVE_SUMMARY.md) · [Notebooks](notebooks/)
+[Dashboard](reports/dashboard.html) · [Executive Summary](reports/EXECUTIVE_SUMMARY.md) · [Notebooks](notebooks/)
 
 ---
 
@@ -79,7 +79,13 @@ Processed: `russia_china_dependency/02_processed_data/`.
 pip install -r requirements.txt
 ```
 
-Notebooks run from project root or `notebooks/`.
+Run notebooks in order from `notebooks/`:
+1. `01_structural_analysis.ipynb`
+2. `02_time_series_econometrics.ipynb`
+3. `03_causal_inference.ipynb`
+4. `04_network_analysis.ipynb`
+5. `05_war_dependency.ipynb`
+6. `06_crink_network.ipynb`
 
 ## License
 
