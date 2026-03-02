@@ -10,7 +10,7 @@
 
 > Have Western sanctions caused irreversible structural dependency of Russia on China?
 
-[Dashboard](reports/dashboard.html) · [Executive Summary](reports/EXECUTIVE_SUMMARY.md) · [Notebooks](notebooks/)
+[🌐 Dashboard](https://saminakibetu.github.io/Russia_China_relationship/reports/dashboard.html) · [Executive Summary](reports/EXECUTIVE_SUMMARY.md) · [Notebooks](notebooks/)
 
 ---
 
